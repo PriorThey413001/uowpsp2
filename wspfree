@@ -4,7 +4,8 @@
     Duration = 15;
 })
   
-    
+    wait(3) return end
+    if game.Players.LocalPlayer:IsInGroup(13066992) then
 	game.StarterGui:SetCore("SendNotification", {
 		Title = "Slap.cc";
 		Text = "Slap.cc, You're whitelisted.";
