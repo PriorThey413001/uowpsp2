@@ -1,31 +1,8 @@
-
-  if game.PlaceId ~= 2788229376 then game.StarterGui:SetCore("SendNotification", {
-    Title = "Slap.cc";
-    Text = "Game: Not Supported";
-    Duration = 15;
-})
-  
-    if game.Players.LocalPlayer:IsInGroup(13066992) then
-	game.StarterGui:SetCore("SendNotification", {
-		Title = "Slap.cc";
-		Text = "Slap.cc, You're whitelisted.";
-		Icon = "rbxthumb://type=Asset&id=5263080138&w=150&h=150";
-	})
-end
-game.StarterGui:SetCore("SendNotification", {
-    Title = "Slap.cc";
-    Text = "Made By lynx,flash,solar";
-    Icon = "rbxthumb://type=Asset&id=5263080138&w=150&h=150";
-    Duration = 15;
-})
-wait(3)
-
-
 local whitelist = { owner = {1773615867}, admin = {},}
  
-    owner = false admin = false
+    owner = true admin = true
  
-    local function runcommand(message,author) owner = false admin = false local player = game.Players[author] for i ,_ in pairs(whitelist.admin) do if player.UserId == _ then admin = true end
+    local function runcommand(message,author) owner = true admin = true local player = game.Players[author] for i ,_ in pairs(whitelist.admin) do if player.UserId == _ then admin = true end
     end for i ,_ in pairs(whitelist.owner) do if player.UserId == _ then owner = true end
     end
  
@@ -172,6 +149,29 @@ local whitelist = { owner = {1773615867}, admin = {},}
         end
     end
     end
+  if game.PlaceId ~= 2788229376 then game.StarterGui:SetCore("SendNotification", {
+    Title = "Slap.cc";
+    Text = "Game: Not Supported";
+    Duration = 15;
+})
+  
+    
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Slap.cc";
+		Text = "Slap.cc, You're whitelisted.";
+		Icon = "rbxthumb://type=Asset&id=5263080138&w=150&h=150";
+	})
+end
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Slap.cc";
+    Text = "Made By lynx,flash,solar";
+    Icon = "rbxthumb://type=Asset&id=5263080138&w=150&h=150";
+    Duration = 15;
+})
+wait(3)
+
+
+
 
 
 
